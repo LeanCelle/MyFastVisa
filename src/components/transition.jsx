@@ -13,7 +13,7 @@ function TransitionComponent() {
         <div className='faq1'>
           <p className='faq-title'>Preguntas Frecuentes</p>
           <p className='doubts'>¿Aún tenés dudas? Contactanos...</p>
-          <button className='contact-button'>Contactar</button>
+          <a href="https://api.whatsapp.com/send/?phone=5491137834275&text&type=phone_number&app_absent=0" target='_blank'><button className='contact-button'>Contactar</button></a>
         </div>
         <div className='faq2'>
           {/* Primer bloque */}

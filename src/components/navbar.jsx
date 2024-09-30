@@ -45,7 +45,7 @@ function Navbar() {
           <li><Link to="/paraAgenciasDeViaje" style={{ display: isMobile ? 'block' : 'none' }}>Para agencias de viaje</Link></li>
           <li>
             <div className="navbarr-button">
-              <button className="btn-empezar">Empezar</button>
+              <a href="https://api.whatsapp.com/send/?phone=5491137834275&text&type=phone_number&app_absent=0" target='_blank' rel="noreferrer"><button className="btn-empezar">Empezar</button></a>
             </div>
           </li>
         </ul>

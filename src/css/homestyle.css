@@ -52,6 +52,9 @@
   color: #007bff;
   border-bottom: 2px solid #007bff;
 }
+.navbarr-links li div a:hover {
+  border: none;
+}
 
 /* Botón "Empezar" con gradiente */
 .navbarr-button .btn-empezar {
@@ -63,6 +66,8 @@
   font-weight: 500;
   border-radius: 25px;
 }
+
+
 
 /* Estilos para el menú hamburguesa */
 .navbar-hamburger {
@@ -744,16 +749,13 @@ hr {
   transform: rotate(-45deg) translate(5px, -5px);
 }
 
-  .navbarr-button .btn-empezar {
-    display: none;
-    padding: 10px 20px;
-    background: linear-gradient(90deg, #3440EC 0%, #C52727 100%);
-    border: none;
-    color: white;
-    font-size: 18px;
-    font-weight: 500;
-    border-radius: 25px;
-  }
+.navbarr-button {
+  position: absolute;
+  bottom: 20px; /* Ajusta el valor según la separación que quieras del borde inferior */
+  left: 0;
+  right: 0;
+  text-align: center;
+}
 
   .contenido-centro {
     height: 85vh;
