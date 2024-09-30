@@ -191,6 +191,14 @@
 .faq-title {
   font-size: 35px;
 }
+.div-transition {
+  align-items: start !important;
+  background-color: #EBEBEB; /* Añade un fondo negro */
+  padding: 10px; /* Agrega un padding si deseas espacio dentro del div */
+  margin-right: 20px;
+  border-radius: 15px; /* Opcional: bordes redondeados */
+  color: black; /* Opcional: cambia el texto a blanco para contraste */
+}
 .doubts {
   font-size: 13px;
 }
@@ -748,7 +756,8 @@ hr {
   }
 
   .contenido-centro {
-    height: 70vh;
+    height: 80vh;
+    padding: 0px 30px;
   }
   
   .contenido-centro h1 {
@@ -766,6 +775,23 @@ hr {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     color: transparent;
+  }
+  .card-container {
+    gap: 80px;
+  }
+  .cards {
+    width: 80vw;
+  }
+  .opinion-container {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin: 0px 140px;
+  }
+  .opinion-cards {
+    width: 80vw;
+    height: auto;
   }
   .somePeople {
     font-size: 25px;
@@ -815,6 +841,7 @@ hr {
   }
   .div-transition {
     align-items: start !important;
+    width: 100%;
   }
   .faq-title {
     font-size: 25px;
