@@ -3,8 +3,8 @@ import Navbar from '../components/navbar';
 import TransitionComponent from '../components/transition';
 import '../css/homestyle.css';
 import React, { useState, useEffect } from 'react';
-import AOS from 'aos'; // Importa AOS
-import 'aos/dist/aos.css'; // Importa el CSS de AOS
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function Home() {
     const wordsWithIcons = [
@@ -18,13 +18,13 @@ function Home() {
     useEffect(() => {
         // Inicializa AOS
         AOS.init({
-            duration: 1000, // Duración de la animación
-            once: true, // Si la animación debe ocurrir solo una vez
+            duration: 1000,
+            once: true,
         });
 
         const interval = setInterval(() => {
             setCurrentIndex((prevIndex) => (prevIndex + 1) % wordsWithIcons.length);
-        }, 2000); // Cambia cada 3 segundos
+        }, 2000);
 
         return () => clearInterval(interval);
     }, [wordsWithIcons.length]);

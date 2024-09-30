@@ -71,7 +71,7 @@
 
 /* Estilos para el menú hamburguesa */
 .navbar-hamburger {
-  display: none; /* Ocultar en pantallas grandes */
+  display: none;
   flex-direction: column;
   cursor: pointer;
 }
@@ -98,7 +98,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center; /* Centra el texto */
+  text-align: center;
   margin: 0px 0px 50px 0px;
   height: 70vh;
   gap: 20px;
@@ -136,19 +136,19 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 80px;
-  margin-top: 20px; /* Espacio entre el texto y las tarjetas */
+  margin-top: 20px;
 }
 
 /* Estilos de cada tarjeta */
 .cards {
   width: 260px;
-  height: auto; /* Mantiene la proporción de la imagen */
-  border-radius: 10px; /* Bordes redondeados opcionales */
-  transition: transform 0.3s; /* Transición suave para el efecto hover */
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s;
 }
 
 .cards:hover {
-  transform: scale(1.02); /* Aumentar ligeramente al pasar el mouse */
+  transform: scale(1.02);
 }
 
 
@@ -198,11 +198,11 @@
 }
 .div-transition {
   align-items: start !important;
-  background-color: #EBEBEB; /* Añade un fondo negro */
-  padding: 10px; /* Agrega un padding si deseas espacio dentro del div */
+  background-color: #EBEBEB;
+  padding: 10px;
   margin-right: 20px;
-  border-radius: 15px; /* Opcional: bordes redondeados */
-  color: black; /* Opcional: cambia el texto a blanco para contraste */
+  border-radius: 15px;
+  color: black;
 }
 .doubts {
   font-size: 13px;
@@ -214,7 +214,7 @@
   border-radius: 25px;
   border: none;
   cursor: pointer;
-  position: relative; /* Necesario para el pseudo-elemento */
+  position: relative;
   z-index: 1;
   color: #000;
 }
@@ -226,8 +226,8 @@
   left: 0;
   right: 0;
   bottom: 0;
-  border-radius: 25px; /* Bordes redondeados */
-  padding: 2px; /* Grosor del borde */
+  border-radius: 25px;
+  padding: 2px;
   background: linear-gradient(90deg, #3440EC 0%, #C52727 100%);
   -webkit-mask: 
     linear-gradient(#fff 0 0) content-box, 
@@ -247,23 +247,23 @@
 .banner-section {
   display: flex;
   justify-content: center;
-  position: relative; /* Posiciona los elementos relativos a este contenedor */
-  text-align: center; /* Centra el texto debajo del logo */
+  position: relative;
+  text-align: center;
   align-items: center;
   flex-direction: column;
-  width: 70vw; /* Ancho del contenedor completo */
+  width: 70vw;
   height: 70vh;
 }
 
 /* Estilo para la imagen de fondo */
 .bannerAcerca {
-  position: absolute; /* Para que el fondo se mantenga detrás del logo y el texto */
-  top: 0; /* Alinea en la parte superior */
-  left: 50%; /* Centra horizontalmente */
-  transform: translateX(-50%); /* Compensa el desplazamiento por el left */
-  width: 100%; /* Asegúrate de que cubra todo el contenedor */
-  height: 100%; /* Asegúrate de que cubra todo el contenedor */
-  object-fit: cover; /* Para asegurar que la imagen mantenga su proporción */
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   opacity: 1;
   background-color: #000000;
   border-radius: 30px;
@@ -272,28 +272,28 @@
 /* Estilo para el logo dentro de la imagen */
 .logoAcerca {
   z-index: 1;
-  width: 150px; /* Ajusta el tamaño del logo */
+  width: 150px;
   height: auto;
 }
 
 /* Estilo para el texto debajo del logo */
 .textoDebajoLogo {
   z-index: 1;
-  margin-top: 20px; /* Espacio entre el logo y el texto */
-  font-size: 20px; /* Ajusta el tamaño del texto */
-  color: white; /* Cambia el color del texto si es necesario */
+  margin-top: 20px;
+  font-size: 20px;
+  color: white;
 }
 
 .content-section {
-  display: flex; /* Usar flexbox para alinear elementos en línea */
-  justify-content: center; /* Centrar horizontalmente */
-  align-items: center; /* Centrar verticalmente */
-  margin: 150px 130px; /* Margen superior e inferior */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 150px 130px;
 }
 
 .text-container {
   flex: 1;
-  text-align: center; /* Centrar el texto dentro del contenedor */
+  text-align: center;
 }
 .text-content {
   font-size: 30px;
@@ -301,13 +301,13 @@
 
 .image-container {
   flex: 1;
-  display: flex; /* Usar flexbox para centrar la imagen */
-  justify-content: center; /* Centrar horizontalmente */
+  display: flex;
+  justify-content: center;
 }
 
 .side-image {
-  width: 350px; /* Ajustar el ancho de la imagen al contenedor */
-  height: auto; /* Mantener proporción */
+  width: 350px;
+  height: auto;
 }
 
 .span {
@@ -347,25 +347,25 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 20px 0; /* Espacio vertical alrededor */
+  padding: 20px 0;
 }
 
 .icon-item {
   display: flex;
-  align-items: center; /* Centra los íconos y texto horizontalmente */
-  text-align: center; /* Alinea el texto en el centro */
+  align-items: center;
+  text-align: center;
   gap: 5px;
 }
 
 .icon-image {
-  width: 25px; /* Ajusta el tamaño del ícono */
-  height: auto; /* Mantiene la proporción del ícono */
-  margin-bottom: 10px; /* Espacio entre el ícono y el texto */
+  width: 25px;
+  height: auto;
+  margin-bottom: 10px;
 }
 
 .icon-text {
   font-size: 25px;
-  color: #000; /* Cambia el color del texto según sea necesario */
+  color: #000;
 }
 
 .lanzamienzo {
@@ -406,23 +406,23 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 600px; /* Ajusta el ancho máximo según sea necesario */
+  max-width: 600px;
   padding: 20px 20px;
   gap: 15px;
   border-radius: 35px;
-  margin: 0 auto; /* Centra el formulario */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ajusta la sombra según sea necesario */
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .form-group {
   display: flex;
   justify-content: space-between;
-  gap: 10px; /* Espacio entre los campos */
+  gap: 10px;
 }
 
 .input-container {
   position: relative;
-  flex: 1; /* Hace que cada campo ocupe el mismo espacio */
+  flex: 1;
 }
 .inputTrabajo {
   text-align: center;
@@ -431,16 +431,16 @@
 
 .icon {
   position: absolute;
-  left: 10px; /* Ajusta la posición del ícono */
+  left: 10px;
   top: 50%;
-  transform: translateY(-50%); /* Centra verticalmente el ícono */
-  width: 20px; /* Ajusta el tamaño del ícono */
-  height: 20px; /* Ajusta el tamaño del ícono */
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
 }
 
 input {
   width: 100%;
-  padding: 10px 10px 10px 40px; /* Espacio para el ícono */
+  padding: 10px 10px 10px 40px;
   border: 1px solid #ccc;
   border-radius: 15px;
 }
@@ -448,7 +448,7 @@ input {
 .submit-button {
   margin-top: 20px;
   padding: 10px;
-  background-color: #3440EC; /* Cambia este color según tu diseño */
+  background-color: #3440EC;
   color: white;
   border: none;
   border-radius: 25px;
@@ -456,7 +456,7 @@ input {
 }
 
 .submit-button:hover {
-  background-color: #2f39cd; /* Cambia este color según tu diseño */
+  background-color: #2f39cd;
 }
 .enviar-icon {
   padding: 0px 10px;
@@ -467,18 +467,18 @@ input {
 }
 
 .name-group {
-  display: flex; /* Utiliza flexbox para alinear los elementos */
-  justify-content: space-between; /* Espacia los elementos para que ocupen el ancho disponible */
-  margin-bottom: 15px; /* Espacio entre este grupo y el siguiente campo */
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
 }
 
 .name-container {
-  flex: 1; /* Hace que cada contenedor de nombre ocupe el mismo ancho */
-  margin-right: 10px; /* Espacio entre el campo de nombre y apellido */
+  flex: 1;
+  margin-right: 10px;
 }
 
 .name-container:last-child {
-  margin-right: 0; /* Elimina el margen derecho del último contenedor */
+  margin-right: 0;
 }
 
 .contact-container {
@@ -488,35 +488,35 @@ input {
   align-items: center;
   flex-wrap: wrap;
   gap: 30px;
-  padding: 20px; /* Ajusta el padding según lo necesites */
+  padding: 20px;
 }
 
 .text-blocks {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap; /* Permite que los elementos se distribuyan en varias filas */
-  width: 40%; /* Asegúrate de que ocupe el ancho completo disponible */
+  flex-wrap: wrap;
+  width: 40%;
   gap: 30px;
 }
 
 .text-block {
-  width: 45%; /* Ajusta el ancho de cada bloque; puedes cambiar esto según lo necesites */
-  background-color: #EBEBEB; /* Color de fondo para los bloques */
+  width: 45%;
+  background-color: #EBEBEB;
   padding: 10px;
-  border-radius: 25px; /* Bordes redondeados */
+  border-radius: 25px;
 }
 .text-block-contactanos {
-  width: 45%; /* Ajusta el ancho de cada bloque; puedes cambiar esto según lo necesites */
+  width: 45%;
   padding: 10px;
-  margin: 10px 1%; /* Espacio entre los bloques (izquierda y derecha) */
-  border-radius: 5px; /* Bordes redondeados */
+  margin: 10px 1%;
+  border-radius: 5px;
 }
 .form-container-contactanos {
   width: 40%;
 }
 
 .form-group {
-  margin-bottom: 15px; /* Espacio entre los campos del formulario */
+  margin-bottom: 15px;
 }
 .input-group {
   display: flex;
@@ -525,7 +525,7 @@ input {
 }
 
 .input-group input {
-  width: calc(33.33% - 10px); /* Asegura que los inputs se distribuyan equitativamente */
+  width: calc(33.33% - 10px);
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 15px;
@@ -535,20 +535,20 @@ input {
   padding: 10px;
   border-radius: 15px;
   border: 1px solid #ccc;
-  resize: none; /* Evita que el usuario redimensione el textarea */
+  resize: none;
 }
 
 .btn-submit {
-  background-color: #007bff; /* Color del botón */
-  color: white; /* Color del texto del botón */
+  background-color: #007bff;
+  color: white;
   border: none;
-  padding: 10px 15px; /* Espaciado interno */
-  border-radius: 5px; /* Bordes redondeados */
-  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .btn-submit:hover {
-  background-color: #0056b3; /* Color del botón al pasar el cursor */
+  background-color: #0056b3;
 }
 
 .requisitos-container-total {
@@ -625,39 +625,39 @@ input {
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: baseline; /* Alinear elementos al inicio */
+  align-items: baseline;
   padding: 20px 200px;
-  background-color: #EBEBEB; /* Color de fondo */
-  border-top: 1px solid #e5e5e5; /* Línea superior opcional */
+  background-color: #EBEBEB;
+  border-top: 1px solid #e5e5e5;
 }
 
 .footer-section {
-  flex: 1; /* Permitir que cada sección ocupe el mismo espacio */
-  padding: 0 20px; /* Espaciado interno */
+  flex: 1;
+  padding: 0 20px;
 }
 
 .footer-logo {
-  height: 60px; /* Ajusta el tamaño del logo */
+  height: 60px;
 }
 
 .footer-section h3 {
-  font-size: 18px; /* Tamaño de fuente para títulos */
-  margin-bottom: 10px; /* Espacio debajo del título */
+  font-size: 18px;
+  margin-bottom: 10px;
 }
 
 .footer-section ul {
-  list-style: none; /* Sin viñetas */
-  padding: 0; /* Sin padding */
+  list-style: none;
+  padding: 0;
 }
 
 .footer-section li {
-  margin: 5px 0; /* Espacio entre los elementos de la lista */
-  cursor: pointer; /* Cambiar cursor para indicar que es clickeable */
-  transition: color 0.3s; /* Transición de color suave */
+  margin: 5px 0;
+  cursor: pointer;
+  transition: color 0.3s;
 }
 
 .footer-section li:hover {
-  color: #007bff; /* Color al pasar el mouse */
+  color: #007bff;
 }
 
 .li-footer {
@@ -683,7 +683,7 @@ hr {
   padding: 5px 0px;
   text-align: center;
   font-size: 11px;
-  background-color: #EBEBEB; /* Color de fondo */
+  background-color: #EBEBEB;
 }
 
 .link {
@@ -703,29 +703,29 @@ hr {
   /* Navbar */
 /* Estilos adicionales para el menú hamburguesa desde la derecha */
 .navbarr-links {
-  position: fixed; /* Fija la posición del menú */
-  right: -100%; /* Inicialmente fuera de la pantalla, hacia la derecha */
+  position: fixed;
+  right: -100%;
   top: 0;
   height: 100%;
-  width: 300px; /* Ancho del menú */
+  width: 300px;
   background-color: #F2F2F2;
-  flex-direction: column; /* Coloca los elementos en una columna */
-  align-items: flex-start; /* Alinea los elementos al inicio del eje X */
-  justify-content: flex-start; /* Alinea los elementos al inicio del eje Y */
-  padding: 20px; /* Padding para que los elementos no estén pegados a los bordes */
-  transition: right 0.3s ease; /* Animación suave */
-  z-index: 999; /* Asegúrate de que el menú esté por encima de otros elementos */
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 20px;
+  transition: right 0.3s ease;
+  z-index: 999;
 }
 
 .navbarr-links.active {
-  right: 0; /* Cuando el menú está abierto, lo mostramos desde la derecha */
+  right: 0;
 }
 
 .navbar-hamburger {
-  display: flex; /* Mostrar en pantallas pequeñas */
+  display: flex;
   flex-direction: column;
   cursor: pointer;
-  z-index: 1000; /* Asegúrate de que el botón esté por encima del menú cuando esté cerrado */
+  z-index: 1000;
 }
 
 .line {
@@ -751,7 +751,7 @@ hr {
 
 .navbarr-button {
   position: absolute;
-  bottom: 20px; /* Ajusta el valor según la separación que quieras del borde inferior */
+  bottom: 20px;
   left: 0;
   right: 0;
   text-align: center;
@@ -852,23 +852,23 @@ hr {
     font-size: 15px;
   }
   .banner-section {
-    width: 85vw; /* Ancho del contenedor completo */
+    width: 85vw;
     height: 80vh;
   }
   .content-section {
     flex-direction: column;
-    margin: 150px 25px; /* Margen superior e inferior */
+    margin: 150px 25px;
   }
   
   .text-container {
-    text-align: left; /* Centrar el texto dentro del contenedor */
+    text-align: left;
   }
   .text-content {
     font-size: 25px;
   }
   
   .side-image {
-    width: 100%; /* Ajustar el ancho de la imagen al contenedor */
+    width: 100%;
   }
   .entendemos {
     font-size: 20px;
@@ -884,12 +884,12 @@ hr {
     font-size: 20px;
   }
   .icon-section {
-    padding: 0px 20px; /* Espacio vertical alrededor */
+    padding: 0px 20px;
   }
   
   .icon-text {
     font-size: 20px;
-    color: #000; /* Cambia el color del texto según sea necesario */
+    color: #000;
   }
   .lanzamienzo {
     margin: 30px 30px;
@@ -927,37 +927,37 @@ hr {
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 600px; /* Ajusta el ancho máximo según sea necesario */
+    max-width: 600px;
     padding: 20px 20px;
     gap: 15px;
     border-radius: 35px;
-    margin: 0 auto; /* Centra el formulario */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ajusta la sombra según sea necesario */
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
   
   .form-group {
     display: flex;
     justify-content: space-between;
-    gap: 10px; /* Espacio entre los campos */
+    gap: 10px;
   }
   
   .input-container {
     position: relative;
-    flex: 1; /* Hace que cada campo ocupe el mismo espacio */
+    flex: 1;
   }
   
   .icon {
     position: absolute;
-    left: 10px; /* Ajusta la posición del ícono */
+    left: 10px;
     top: 50%;
-    transform: translateY(-50%); /* Centra verticalmente el ícono */
-    width: 20px; /* Ajusta el tamaño del ícono */
-    height: 20px; /* Ajusta el tamaño del ícono */
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
   }
   
   input {
     width: 100%;
-    padding: 10px 10px 10px 40px; /* Espacio para el ícono */
+    padding: 10px 10px 10px 40px;
     border: 1px solid #ccc;
     border-radius: 15px;
   }
@@ -965,7 +965,7 @@ hr {
   .submit-button {
     margin-top: 20px;
     padding: 10px;
-    background-color: #3440EC; /* Cambia este color según tu diseño */
+    background-color: #3440EC;
     color: white;
     border: none;
     border-radius: 25px;
@@ -973,7 +973,7 @@ hr {
   }
   
   .submit-button:hover {
-    background-color: #2f39cd; /* Cambia este color según tu diseño */
+    background-color: #2f39cd;
   }
   .enviar-icon {
     padding: 0px 10px;
@@ -987,53 +987,50 @@ hr {
     align-items: center;
     flex-wrap: wrap;
     gap: 30px;
-    padding: 20px; /* Ajusta el padding según lo necesites */
+    padding: 20px;
   }
   
   .text-blocks {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    flex-wrap: wrap; /* Permite que los elementos se distribuyan en varias filas */
-    width: 100%; /* Asegúrate de que ocupe el ancho completo disponible */
+    flex-wrap: wrap;
+    width: 100%;
     gap: 30px;
   }
   
   .text-block {
-    width: 100%; /* Ajusta el ancho de cada bloque; puedes cambiar esto según lo necesites */
-    background-color: #EBEBEB; /* Color de fondo para los bloques */
+    width: 100%;
+    background-color: #EBEBEB;
     padding: 10px;
-    border-radius: 25px; /* Bordes redondeados */
+    border-radius: 25px;
   }
   .text-block-contactanos {
-    width: 100%; /* Ajusta el ancho de cada bloque; puedes cambiar esto según lo necesites */
+    width: 100%;
     padding: 10px;
-    margin: 10px 1%; /* Espacio entre los bloques (izquierda y derecha) */
-    border-radius: 5px; /* Bordes redondeados */
+    margin: 10px 1%;
+    border-radius: 5px;
   }
   .form-container-contactanos {
     width: 100%;
   }
   
   .form-group {
-    margin-bottom: 15px; /* Espacio entre los campos del formulario */
+    margin-bottom: 15px;
   }
   
   .btn-submit {
-    background-color: #007bff; /* Color del botón */
-    color: white; /* Color del texto del botón */
+    background-color: #007bff;
+    color: white;
     border: none;
-    padding: 10px 15px; /* Espaciado interno */
-    border-radius: 5px; /* Bordes redondeados */
-    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
   }
   
   .btn-submit:hover {
-    background-color: #0056b3; /* Color del botón al pasar el cursor */
+    background-color: #0056b3;
   }
-
-
-
 
 
 

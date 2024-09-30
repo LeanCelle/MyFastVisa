@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // Importa Link
+import { Link } from 'react-router-dom';
 import '../css/homestyle.css';
 
 function Footer() {

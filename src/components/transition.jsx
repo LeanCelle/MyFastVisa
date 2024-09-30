@@ -16,7 +16,7 @@ function TransitionComponent() {
           <a href="https://api.whatsapp.com/send/?phone=5491137834275&text&type=phone_number&app_absent=0" target='_blank'><button className='contact-button'>Contactar</button></a>
         </div>
         <div className='faq2'>
-          {/* Primer bloque */}
+          
           <div className='div-transition' style={{ display: 'flex', alignItems: 'center', cursor: 'pointer' }} onClick={() => {
               setShowFirst(!showFirst);
               setShowSecond(false);
@@ -34,7 +34,7 @@ function TransitionComponent() {
             </div>
           </Collapse>
 
-          {/* Segundo bloque */}
+          
           <div className='div-transition' style={{ display: 'flex', alignItems: 'center', cursor: 'pointer' }} onClick={() => {
               setShowSecond(!showSecond);
               setShowFirst(false);
@@ -52,7 +52,7 @@ function TransitionComponent() {
             </div>
           </Collapse>
 
-          {/* Tercer bloque */}
+          
           <div className='div-transition' style={{ display: 'flex', alignItems: 'center', cursor: 'pointer' }} onClick={() => {
               setShowThird(!showThird);
               setShowFirst(false);
@@ -70,7 +70,7 @@ function TransitionComponent() {
             </div>
           </Collapse>
 
-          {/* Cuarto bloque */}
+          
           <div className='div-transition' style={{ display: 'flex', alignItems: 'center', cursor: 'pointer' }} onClick={() => {
               setShowFourth(!showFourth);
               setShowFirst(false);

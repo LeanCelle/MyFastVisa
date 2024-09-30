@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 768); // Ajusta la verificación para dispositivos móviles
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);

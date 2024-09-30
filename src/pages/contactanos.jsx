@@ -56,7 +56,7 @@ function Contactanos() {
                 <input type="tel" placeholder="Número de teléfono" required />
               </div>
               
-              {/* Aquí añadimos los nuevos inputs */}
+              
               <div className="form-group">
                 <div className="input-container">
                   <input className='inputTrabajo' type="text" placeholder="Trabajo" />
@@ -69,7 +69,7 @@ function Contactanos() {
                 </div>
               </div>
 
-              {/* Input para el mensaje */}
+              
               <div className="input-container">
                 <textarea 
                   placeholder="Deja tu mensaje (máximo 112 caracteres)" 

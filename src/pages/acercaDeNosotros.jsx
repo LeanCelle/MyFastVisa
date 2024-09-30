@@ -9,17 +9,17 @@ function AcercaDeNosotros() {
         <Navbar/>
         <div className='banner-container'>
           <div className="banner-section">
-            {/* Div para contener la imagen de fondo */}
+            
             <div className="banner-background">
               <img className='bannerAcerca' src={`${process.env.PUBLIC_URL}/img/Rectangle.png`} alt="Fondo" />
             </div>
-            {/* Logo y texto dentro del contenedor */}
+            
             <img className='logoAcerca' src={`${process.env.PUBLIC_URL}/img/Group.png`} alt="Logo" />
             <p className='textoDebajoLogo'>El equipo que hace que tu proceso de visa sea más sencillo</p>
           </div>
         </div>
 
-        {/* Contenedor para texto e imagen centrados */}
+        
         <div className="content-section">
           <div className="text-container">
             <p className="text-content"><span className='span'>MyFastVisa</span> es un servicio diseñado para <span className='span'>simplificar</span> el proceso de obtención de la visa <span className='span'>estadounidense</span></p>
@@ -31,7 +31,7 @@ function AcercaDeNosotros() {
 
         <p className='entendemos'>Entendemos la importancia del tiempo y la libertad de explorar nuevas oportunidades en el extranjero.</p>
 
-        {/* Nuevo contenedor para íconos con texto */}
+        
         <div className='textAndIcon-section-container'>
           <div className='textAndIcon-section'>
             <div className='texto-section'>
