@@ -756,15 +756,15 @@ hr {
   }
 
   .contenido-centro {
-    height: 80vh;
-    padding: 0px 30px;
+    height: 85vh;
+    padding: 0px 1px;
   }
   
   .contenido-centro h1 {
     font-size: 35px;
   }
   .yaSea {
-    margin: 0px 50px;
+    margin: 0px 0px;
   }
   
   .nuestrosServicios {
