@@ -384,6 +384,7 @@
 }
 
 .agencias {
+  font-weight: normal;
   padding: 30px 0px 0px 0px;
   text-align: center;
   font-size: 30px;
@@ -463,6 +464,7 @@ input {
 }
 
 .contactanos {
+  font-weight: normal;
   font-size: 25px;
 }
 
@@ -902,11 +904,6 @@ hr {
   }
   .image-alejo {
     width: 85vw;
-  }
-  .agencias {
-    font-size: 25px;
-    text-align: left;
-    padding-left: 20px;
   }
   .ofrecemos {
     text-align: left;

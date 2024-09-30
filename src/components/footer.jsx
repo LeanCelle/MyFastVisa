@@ -12,8 +12,8 @@ function Footer() {
         </Link>
           <p className='li-footer'>Expertos por más de 5 años en la gestión de visas con más de 1200 clientes satisfechos.</p>
           <div className='social-container'>
-            <a href="https://api.whatsapp.com/send/?phone=5491137834275&text&type=phone_number&app_absent=0" target='_blank'><img src={`${process.env.PUBLIC_URL}/img/wpp.png`} alt="Logo" className="social-logo" /></a>
-            <a href="https://www.instagram.com/myfastvisa)./" target='_blank'><img src={`${process.env.PUBLIC_URL}/img/instagram.png`} alt="Logo" className="social-logo" /></a>
+            <a href="https://api.whatsapp.com/send/?phone=5491137834275&text&type=phone_number&app_absent=0" target='_blank' rel="noreferrer"><img src={`${process.env.PUBLIC_URL}/img/wpp.png`} alt="Logo" className="social-logo" /></a>
+            <a href="https://www.instagram.com/myfastvisa)./" target='_blank' rel="noreferrer"><img src={`${process.env.PUBLIC_URL}/img/instagram.png`} alt="Logo" className="social-logo" /></a>
           </div>
         </div>
 

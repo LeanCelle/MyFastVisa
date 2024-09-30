@@ -15,7 +15,7 @@ function AcercaDeNosotros() {
             </div>
             
             <img className='logoAcerca' src={`${process.env.PUBLIC_URL}/img/Group.png`} alt="Logo" />
-            <p className='textoDebajoLogo'>El equipo que hace que tu proceso de visa sea más sencillo</p>
+            <h1 className='textoDebajoLogo'>El equipo que hace que tu proceso de visa sea más sencillo</h1>
           </div>
         </div>
 
@@ -52,7 +52,7 @@ function AcercaDeNosotros() {
         <p className='lanzamienzo'>Desde nuestro lanzamiento en 2022, hemos ayudado a nuestros clientes a conseguir sus visas para EE. UU., brindando asesoría personalizada y apoyo durante todo el proceso.<br/><br/>¡Y esto es solo el comienzo!</p>
 
         <div className="image-alejo-container">
-            <a href="https://www.linkedin.com/in/alejofiaschecormick/" target='_blank'><img className='image-alejo' src={`${process.env.PUBLIC_URL}/img/Frame 67@2x.png`} alt="Alejo Fiasche." /></a>
+            <a href="https://www.linkedin.com/in/alejofiaschecormick/" target='_blank' rel="noreferrer"><img className='image-alejo' src={`${process.env.PUBLIC_URL}/img/Frame 67@2x.png`} alt="Alejo Fiasche." /></a>
         </div>
 
         <Footer />

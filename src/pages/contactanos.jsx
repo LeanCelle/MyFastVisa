@@ -11,26 +11,26 @@ function Contactanos() {
         <div className="contact-container">
           <div className="text-blocks">
             <div className="text-block-contactanos">
-              <p className='contactanos'><span className='span'>Contáctanos</span></p>
+              <h1 className='contactanos'><span className='span'>Contáctanos</span></h1>
               <p>¿Tenés dudas? Sea sobre visados, documentos u otra índole, contactanos para ayudarte en tu proceso.</p>
             </div>
             <div className="text-block">
               <img src={`${process.env.PUBLIC_URL}/img/Frame 34.png`} alt="Texto 2" className="block-image" />
               <h4>Correo electrónico</h4>
               <p>Nuestro equipo se pondrá en contacto en 24 horas</p>
-              <p>contacto@myfastvisa.com</p>
+              <a href="mailto: contacto@myfastvisa.com" target='_blank' rel="noreferrer"><p>contacto@myfastvisa.com</p></a>
             </div>
             <div className="text-block">
               <img src={`${process.env.PUBLIC_URL}/img/Frame 36.png`} alt="Texto 3" className="block-image" />
               <h4>Instagram</h4>
               <p>Publicamos contenido relacionado a visados, mantenete informado</p>
-              <p>@myfastvisa</p>
+              <a href="https://www.instagram.com/myfastvisa)./" target='_blank' rel="noreferrer"><p>@myfastvisa</p></a>
             </div>
             <div className="text-block">
               <img src={`${process.env.PUBLIC_URL}/img/Frame 36 (1).png`} alt="Texto 4" className="block-image" />
               <h4>WhatsApp</h4>
               <p>¿Necesitás una respuesta más rápida o detallada? Contactanos</p>
-              <p>(11) 3783-4275</p>
+              <a href="https://api.whatsapp.com/send/?phone=5491137834275&text&type=phone_number&app_absent=0" target='_blank' rel="noreferrer"><p>(11) 3783-4275</p></a>
             </div>
           </div>
           

@@ -7,7 +7,7 @@ function ParaAgenciasDeViaje() {
     <>
       <div className='pageGlobalStyle'>
         <Navbar />
-        <p className='agencias'><span className='span'>Agencias de viaje</span></p>
+        <h1 className='agencias'><span className='span'>Agencias de viaje</span></h1>
         <p className='ofrecemos'>Ofrecemos tarifas especiales para agencias de viaje.</p>
         <p className='complete'>Complete el formulario y en 24 horas nos pondremos en contacto con usted.</p>
         
