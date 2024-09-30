@@ -203,6 +203,7 @@
   cursor: pointer;
   position: relative; /* Necesario para el pseudo-elemento */
   z-index: 1;
+  color: #000;
 }
 
 .contact-button::before {
@@ -747,7 +748,7 @@ hr {
   }
 
   .contenido-centro {
-    height: 100vh;
+    height: 70vh;
   }
   
   .contenido-centro h1 {
