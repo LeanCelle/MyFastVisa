@@ -34,6 +34,7 @@ function Home() {
             <div className='pageGlobalStyle'>
                 <Navbar />
 
+
                 <div className='body'>
                     <div className="contenido-centro" data-aos="zoom-out">
                         <div>
