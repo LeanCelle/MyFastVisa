@@ -1,0 +1,1021 @@
+.pageGlobalStyle {
+  font-family: 'DM Sans', sans-serif;
+  background: rgb(242,242,242);
+  background: -moz-radial-gradient(circle, rgba(242,242,242,1) 0%, rgba(217,0,0,0.1292892156862745) 0%, rgba(242,242,242,1) 50%);
+  background: -webkit-radial-gradient(circle, rgba(242,242,242,1) 0%, rgba(217,0,0,0.1292892156862745) 0%, rgba(242,242,242,1) 50%);
+  background: radial-gradient(circle, rgba(242,242,242,1) 0%, rgba(217,0,0,0.1292892156862745) 0%, rgba(242,242,242,1) 50%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f2f2f2",endColorstr="#f2f2f2",GradientType=1);
+}
+
+/* Navbar */
+.navbarr {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 10px 0px;
+  background-color: #F2F2F2;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbarr-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* Logo a la izquierda */
+.navbarr-logo img {
+  height: 50px;
+  cursor: pointer;
+}
+
+/* Enlaces de navegación al centro */
+.navbarr-links {
+  align-items: center;
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+}
+
+.navbarr-links li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbarr-links li a:hover {
+  color: #007bff;
+  border-bottom: 2px solid #007bff;
+}
+
+/* Botón "Empezar" con gradiente */
+.navbarr-button .btn-empezar {
+  padding: 10px 20px;
+  background: linear-gradient(90deg, #3440EC 0%, #C52727 100%);
+  border: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 25px;
+}
+
+/* Estilos para el menú hamburguesa */
+.navbar-hamburger {
+  display: none; /* Ocultar en pantallas grandes */
+  flex-direction: column;
+  cursor: pointer;
+}
+.burger-titles {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.line {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 3px 0;
+  transition: all 0.3s ease;
+}
+
+/* Estilos adicionales para la clase 'body' */
+.body {
+  padding: 20px;
+}
+
+.contenido-centro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center; /* Centra el texto */
+  margin: 0px 0px 50px 0px;
+  height: 70vh;
+  gap: 20px;
+}
+
+.contenido-centro h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0px;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.contenido-centro h2 {
+  margin: 0px;
+  font-size: 32px;
+  font-family: 'DM Sans', sans-serif;
+}
+.yaSea {
+  margin: 0px 250px;
+}
+
+.nuestrosServicios {
+  font-size: 40px;
+  text-align: center;
+  background: linear-gradient(90deg, #3440EC 0%, #C52727 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Contenedor de las tarjetas */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 80px;
+  margin-top: 20px; /* Espacio entre el texto y las tarjetas */
+}
+
+/* Estilos de cada tarjeta */
+.cards {
+  width: 260px;
+  height: auto; /* Mantiene la proporción de la imagen */
+  border-radius: 10px; /* Bordes redondeados opcionales */
+  transition: transform 0.3s; /* Transición suave para el efecto hover */
+}
+
+.cards:hover {
+  transform: scale(1.02); /* Aumentar ligeramente al pasar el mouse */
+}
+
+
+.numberSpan {
+  color: #3440EC;
+}
+.somePeople {
+  font-size: 40px;
+  padding: 60px 0px;
+  text-align: center;
+}
+
+.opinion-container {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin: 0px 140px;
+}
+.opinion-cards {
+  width: 300px;
+  height: auto;
+}
+
+.faq-container {
+  display: flex;
+  justify-content: center;
+  padding: 100px 0px;
+  gap: 50px;
+}
+.faq1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.faq2 {
+  width: 100%;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  justify-content: center;
+}
+.faq-title {
+  font-size: 35px;
+}
+.doubts {
+  font-size: 13px;
+}
+.contact-button {
+  font-size: 18px;
+  padding: 10px 20px;
+  background: transparent;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  position: relative; /* Necesario para el pseudo-elemento */
+  z-index: 1;
+}
+
+.contact-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 25px; /* Bordes redondeados */
+  padding: 2px; /* Grosor del borde */
+  background: linear-gradient(90deg, #3440EC 0%, #C52727 100%);
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+.banner-container {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0px;
+}
+.banner-section {
+  display: flex;
+  justify-content: center;
+  position: relative; /* Posiciona los elementos relativos a este contenedor */
+  text-align: center; /* Centra el texto debajo del logo */
+  align-items: center;
+  flex-direction: column;
+  width: 70vw; /* Ancho del contenedor completo */
+  height: 70vh;
+}
+
+/* Estilo para la imagen de fondo */
+.bannerAcerca {
+  position: absolute; /* Para que el fondo se mantenga detrás del logo y el texto */
+  top: 0; /* Alinea en la parte superior */
+  left: 50%; /* Centra horizontalmente */
+  transform: translateX(-50%); /* Compensa el desplazamiento por el left */
+  width: 100%; /* Asegúrate de que cubra todo el contenedor */
+  height: 100%; /* Asegúrate de que cubra todo el contenedor */
+  object-fit: cover; /* Para asegurar que la imagen mantenga su proporción */
+  opacity: 1;
+  background-color: #000000;
+  border-radius: 30px;
+}
+
+/* Estilo para el logo dentro de la imagen */
+.logoAcerca {
+  z-index: 1;
+  width: 150px; /* Ajusta el tamaño del logo */
+  height: auto;
+}
+
+/* Estilo para el texto debajo del logo */
+.textoDebajoLogo {
+  z-index: 1;
+  margin-top: 20px; /* Espacio entre el logo y el texto */
+  font-size: 20px; /* Ajusta el tamaño del texto */
+  color: white; /* Cambia el color del texto si es necesario */
+}
+
+.content-section {
+  display: flex; /* Usar flexbox para alinear elementos en línea */
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  margin: 150px 130px; /* Margen superior e inferior */
+}
+
+.text-container {
+  flex: 1;
+  text-align: center; /* Centrar el texto dentro del contenedor */
+}
+.text-content {
+  font-size: 30px;
+}
+
+.image-container {
+  flex: 1;
+  display: flex; /* Usar flexbox para centrar la imagen */
+  justify-content: center; /* Centrar horizontalmente */
+}
+
+.side-image {
+  width: 350px; /* Ajustar el ancho de la imagen al contenedor */
+  height: auto; /* Mantener proporción */
+}
+
+.span {
+  background: linear-gradient(90deg, #3440EC 0%, #C52727 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+.entendemos {
+  text-align: center;
+  font-size: 25px;
+  padding: 0px 400px;
+}
+.textAndIcon-section-container {
+  width: 100%;
+  margin: 100px 0px;
+  display: flex;
+  justify-content: center;
+}
+.textAndIcon-section {
+  width: 65%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.texto-section {
+  width: 100%;
+  text-align: center;
+  flex: 1;
+  font-size: 25px;
+}
+.icon-section {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 0; /* Espacio vertical alrededor */
+}
+
+.icon-item {
+  display: flex;
+  align-items: center; /* Centra los íconos y texto horizontalmente */
+  text-align: center; /* Alinea el texto en el centro */
+  gap: 5px;
+}
+
+.icon-image {
+  width: 25px; /* Ajusta el tamaño del ícono */
+  height: auto; /* Mantiene la proporción del ícono */
+  margin-bottom: 10px; /* Espacio entre el ícono y el texto */
+}
+
+.icon-text {
+  font-size: 25px;
+  color: #000; /* Cambia el color del texto según sea necesario */
+}
+
+.lanzamienzo {
+  margin: 30px 350px;
+  font-size: 25px;
+  text-align: center;
+}
+
+.image-alejo-container {
+  margin: 100px 0px;
+  display: flex;
+  justify-content: center;
+}
+.image-alejo {
+  width: 25vw;
+}
+
+.agencias {
+  padding: 30px 0px 0px 0px;
+  text-align: center;
+  font-size: 30px;
+}
+.ofrecemos {
+  text-align: center;
+  font-size: 16px;
+}
+.complete {
+  margin: 0vh 38vw;
+  text-align: center;
+  font-size: 16px;
+}
+
+.form-container {
+  margin: 50px 0px;
+}
+.contact-form {
+  background-color: #EBEBEB;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px; /* Ajusta el ancho máximo según sea necesario */
+  padding: 20px 20px;
+  gap: 15px;
+  border-radius: 35px;
+  margin: 0 auto; /* Centra el formulario */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ajusta la sombra según sea necesario */
+}
+
+.form-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px; /* Espacio entre los campos */
+}
+
+.input-container {
+  position: relative;
+  flex: 1; /* Hace que cada campo ocupe el mismo espacio */
+}
+.inputTrabajo {
+  text-align: center;
+  padding: 10px;
+}
+
+.icon {
+  position: absolute;
+  left: 10px; /* Ajusta la posición del ícono */
+  top: 50%;
+  transform: translateY(-50%); /* Centra verticalmente el ícono */
+  width: 20px; /* Ajusta el tamaño del ícono */
+  height: 20px; /* Ajusta el tamaño del ícono */
+}
+
+input {
+  width: 100%;
+  padding: 10px 10px 10px 40px; /* Espacio para el ícono */
+  border: 1px solid #ccc;
+  border-radius: 15px;
+}
+
+.submit-button {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #3440EC; /* Cambia este color según tu diseño */
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #2f39cd; /* Cambia este color según tu diseño */
+}
+.enviar-icon {
+  padding: 0px 10px;
+}
+
+.contactanos {
+  font-size: 25px;
+}
+
+.name-group {
+  display: flex; /* Utiliza flexbox para alinear los elementos */
+  justify-content: space-between; /* Espacia los elementos para que ocupen el ancho disponible */
+  margin-bottom: 15px; /* Espacio entre este grupo y el siguiente campo */
+}
+
+.name-container {
+  flex: 1; /* Hace que cada contenedor de nombre ocupe el mismo ancho */
+  margin-right: 10px; /* Espacio entre el campo de nombre y apellido */
+}
+
+.name-container:last-child {
+  margin-right: 0; /* Elimina el margen derecho del último contenedor */
+}
+
+.contact-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 20px; /* Ajusta el padding según lo necesites */
+}
+
+.text-blocks {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Permite que los elementos se distribuyan en varias filas */
+  width: 40%; /* Asegúrate de que ocupe el ancho completo disponible */
+  gap: 30px;
+}
+
+.text-block {
+  width: 45%; /* Ajusta el ancho de cada bloque; puedes cambiar esto según lo necesites */
+  background-color: #EBEBEB; /* Color de fondo para los bloques */
+  padding: 10px;
+  border-radius: 25px; /* Bordes redondeados */
+}
+.text-block-contactanos {
+  width: 45%; /* Ajusta el ancho de cada bloque; puedes cambiar esto según lo necesites */
+  padding: 10px;
+  margin: 10px 1%; /* Espacio entre los bloques (izquierda y derecha) */
+  border-radius: 5px; /* Bordes redondeados */
+}
+.form-container-contactanos {
+  width: 40%;
+}
+
+.form-group {
+  margin-bottom: 15px; /* Espacio entre los campos del formulario */
+}
+.input-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.input-group input {
+  width: calc(33.33% - 10px); /* Asegura que los inputs se distribuyan equitativamente */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+}
+.input-container textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  resize: none; /* Evita que el usuario redimensione el textarea */
+}
+
+.btn-submit {
+  background-color: #007bff; /* Color del botón */
+  color: white; /* Color del texto del botón */
+  border: none;
+  padding: 10px 15px; /* Espaciado interno */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+.btn-submit:hover {
+  background-color: #0056b3; /* Color del botón al pasar el cursor */
+}
+
+.requisitos-container-total {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+}
+.requisitos-container {
+  padding: 20px;
+  margin: 100px 0px 0px 0px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #EBEBEB;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 25px;
+}
+
+.requisitos-titulo {
+  margin-bottom: 10px;
+}
+.requisitos-titulo p {
+  font-size: 30px;
+}
+
+.requisitos-contenido {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 20px;
+}
+.requisitos-img {
+  width: 100%;
+}
+.requisitos-img img {
+  width: 100%;
+}
+.requisitos-icons {
+  width: 20px;
+}
+
+.requisitos-textos {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.texto-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.requisitos-boton {
+  margin-top: 20px;
+}
+.requisitos-text {
+  margin: 0px;
+}
+
+
+
+
+
+
+/* Footer */
+
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: baseline; /* Alinear elementos al inicio */
+  padding: 20px 200px;
+  background-color: #EBEBEB; /* Color de fondo */
+  border-top: 1px solid #e5e5e5; /* Línea superior opcional */
+}
+
+.footer-section {
+  flex: 1; /* Permitir que cada sección ocupe el mismo espacio */
+  padding: 0 20px; /* Espaciado interno */
+}
+
+.footer-logo {
+  height: 60px; /* Ajusta el tamaño del logo */
+}
+
+.footer-section h3 {
+  font-size: 18px; /* Tamaño de fuente para títulos */
+  margin-bottom: 10px; /* Espacio debajo del título */
+}
+
+.footer-section ul {
+  list-style: none; /* Sin viñetas */
+  padding: 0; /* Sin padding */
+}
+
+.footer-section li {
+  margin: 5px 0; /* Espacio entre los elementos de la lista */
+  cursor: pointer; /* Cambiar cursor para indicar que es clickeable */
+  transition: color 0.3s; /* Transición de color suave */
+}
+
+.footer-section li:hover {
+  color: #007bff; /* Color al pasar el mouse */
+}
+
+.li-footer {
+  padding-top: 20px;
+}
+.logo-section {
+  width: 100%;
+}
+.products-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.company-section {
+  width: 100%;
+}
+hr {
+  margin: 0px 200px !important;
+  padding: 0px;
+}
+.lastFooter {
+  margin: 0px;
+  padding: 5px 0px;
+  text-align: center;
+  font-size: 11px;
+  background-color: #EBEBEB; /* Color de fondo */
+}
+
+.link {
+  color: black;
+}
+.link:hover {
+  color: #007bff;
+}
+.social-container {
+  display: flex;
+  gap: 10px;
+}
+
+
+/* Media queries for mobile devices */
+@media (max-width: 768px) {
+  /* Navbar */
+/* Estilos adicionales para el menú hamburguesa desde la derecha */
+.navbarr-links {
+  position: fixed; /* Fija la posición del menú */
+  right: -100%; /* Inicialmente fuera de la pantalla, hacia la derecha */
+  top: 0;
+  height: 100%;
+  width: 300px; /* Ancho del menú */
+  background-color: #F2F2F2;
+  flex-direction: column; /* Coloca los elementos en una columna */
+  align-items: flex-start; /* Alinea los elementos al inicio del eje X */
+  justify-content: flex-start; /* Alinea los elementos al inicio del eje Y */
+  padding: 20px; /* Padding para que los elementos no estén pegados a los bordes */
+  transition: right 0.3s ease; /* Animación suave */
+  z-index: 999; /* Asegúrate de que el menú esté por encima de otros elementos */
+}
+
+.navbarr-links.active {
+  right: 0; /* Cuando el menú está abierto, lo mostramos desde la derecha */
+}
+
+.navbar-hamburger {
+  display: flex; /* Mostrar en pantallas pequeñas */
+  flex-direction: column;
+  cursor: pointer;
+  z-index: 1000; /* Asegúrate de que el botón esté por encima del menú cuando esté cerrado */
+}
+
+.line {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 3px 0;
+  transition: all 0.3s ease;
+}
+
+/* Efecto de transformación cuando el menú está abierto */
+.line.open:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.line.open:nth-child(2) {
+  opacity: 0;
+}
+
+.line.open:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+  .navbarr-button .btn-empezar {
+    display: none;
+    padding: 10px 20px;
+    background: linear-gradient(90deg, #3440EC 0%, #C52727 100%);
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 25px;
+  }
+
+  .contenido-centro {
+    height: 100vh;
+  }
+  
+  .contenido-centro h1 {
+    font-size: 35px;
+  }
+  .yaSea {
+    margin: 0px 50px;
+  }
+  
+  .nuestrosServicios {
+    font-size: 25px;
+    text-align: center;
+    background: linear-gradient(90deg, #3440EC 0%, #C52727 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+  }
+  .somePeople {
+    font-size: 25px;
+    padding: 60px 10px;
+    text-align: center;
+  }
+  .requisitos-container {
+    padding: 20px;
+    margin: 100px 15px 0px 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #EBEBEB;
+    align-items: center;
+    border-radius: 25px;
+  }
+  .requisitos-titulo p {
+    font-size: 25px;
+  }
+  
+  .requisitos-contenido {
+    flex-direction: column;
+  }
+  .faq-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 100px 0px;
+    gap: 50px;
+  }
+  .faq1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .faq2 {
+    width: 100%;
+    padding: 0px 15px;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+  }
+  .div-transition {
+    align-items: start !important;
+  }
+  .faq-title {
+    font-size: 25px;
+  }
+  .doubts {
+    font-size: 15px;
+  }
+  .banner-section {
+    width: 85vw; /* Ancho del contenedor completo */
+    height: 80vh;
+  }
+  .content-section {
+    flex-direction: column;
+    margin: 150px 25px; /* Margen superior e inferior */
+  }
+  
+  .text-container {
+    text-align: left; /* Centrar el texto dentro del contenedor */
+  }
+  .text-content {
+    font-size: 25px;
+  }
+  
+  .side-image {
+    width: 100%; /* Ajustar el ancho de la imagen al contenedor */
+  }
+  .entendemos {
+    font-size: 20px;
+    padding: 0px 40px;
+  }
+  .textAndIcon-section {
+    width: 100%;
+    flex-direction: column;
+    gap: 25px;
+  }
+  .texto-section {
+    padding: 0px 30px;
+    font-size: 20px;
+  }
+  .icon-section {
+    padding: 0px 20px; /* Espacio vertical alrededor */
+  }
+  
+  .icon-text {
+    font-size: 20px;
+    color: #000; /* Cambia el color del texto según sea necesario */
+  }
+  .lanzamienzo {
+    margin: 30px 30px;
+    font-size: 20px;
+  }
+  .image-alejo-container {
+    margin: 100px 0px;
+    display: flex;
+    justify-content: center;
+  }
+  .image-alejo {
+    width: 85vw;
+  }
+  .agencias {
+    font-size: 25px;
+    text-align: left;
+    padding-left: 20px;
+  }
+  .ofrecemos {
+    text-align: left;
+    font-size: 18px;
+    padding-left: 20px;
+  }
+  .complete {
+    margin: 30px 0px 0px 0px;
+    text-align: left;
+    font-size: 18px;
+    padding-left: 20px;
+  }
+  .form-container {
+    margin: 25px 15px 50px 15px;
+  }
+  .contact-form {
+    background-color: #EBEBEB;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px; /* Ajusta el ancho máximo según sea necesario */
+    padding: 20px 20px;
+    gap: 15px;
+    border-radius: 35px;
+    margin: 0 auto; /* Centra el formulario */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ajusta la sombra según sea necesario */
+  }
+  
+  .form-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; /* Espacio entre los campos */
+  }
+  
+  .input-container {
+    position: relative;
+    flex: 1; /* Hace que cada campo ocupe el mismo espacio */
+  }
+  
+  .icon {
+    position: absolute;
+    left: 10px; /* Ajusta la posición del ícono */
+    top: 50%;
+    transform: translateY(-50%); /* Centra verticalmente el ícono */
+    width: 20px; /* Ajusta el tamaño del ícono */
+    height: 20px; /* Ajusta el tamaño del ícono */
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px 10px 10px 40px; /* Espacio para el ícono */
+    border: 1px solid #ccc;
+    border-radius: 15px;
+  }
+  
+  .submit-button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #3440EC; /* Cambia este color según tu diseño */
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+  
+  .submit-button:hover {
+    background-color: #2f39cd; /* Cambia este color según tu diseño */
+  }
+  .enviar-icon {
+    padding: 0px 10px;
+  }
+
+  .contact-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 20px; /* Ajusta el padding según lo necesites */
+  }
+  
+  .text-blocks {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap; /* Permite que los elementos se distribuyan en varias filas */
+    width: 100%; /* Asegúrate de que ocupe el ancho completo disponible */
+    gap: 30px;
+  }
+  
+  .text-block {
+    width: 100%; /* Ajusta el ancho de cada bloque; puedes cambiar esto según lo necesites */
+    background-color: #EBEBEB; /* Color de fondo para los bloques */
+    padding: 10px;
+    border-radius: 25px; /* Bordes redondeados */
+  }
+  .text-block-contactanos {
+    width: 100%; /* Ajusta el ancho de cada bloque; puedes cambiar esto según lo necesites */
+    padding: 10px;
+    margin: 10px 1%; /* Espacio entre los bloques (izquierda y derecha) */
+    border-radius: 5px; /* Bordes redondeados */
+  }
+  .form-container-contactanos {
+    width: 100%;
+  }
+  
+  .form-group {
+    margin-bottom: 15px; /* Espacio entre los campos del formulario */
+  }
+  
+  .btn-submit {
+    background-color: #007bff; /* Color del botón */
+    color: white; /* Color del texto del botón */
+    border: none;
+    padding: 10px 15px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  }
+  
+  .btn-submit:hover {
+    background-color: #0056b3; /* Color del botón al pasar el cursor */
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+  .footer {
+    flex-direction: column;
+    padding: 20px 20px;
+    gap: 30px;
+  }
+}
