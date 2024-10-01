@@ -8,9 +8,9 @@ import 'aos/dist/aos.css';
 
 function Home() {
     const wordsWithIcons = [
-        { word: 'Turismo', icon: `${process.env.PUBLIC_URL}/img/Property 1=Frame 76.png`, color: 'rgb(243, 243, 22)' },
-        { word: 'Estudios', icon: `${process.env.PUBLIC_URL}/img/Property 1=Frame 77.png`, color: 'red' },
-        { word: 'Trabajo', icon: `${process.env.PUBLIC_URL}/img/Frame 75.png`, color: 'green' }
+        { word: 'Turismo ', icon: `${process.env.PUBLIC_URL}/img/Property 1=Frame 76.png`, color: 'rgb(243, 243, 22)' },
+        { word: 'Estudios ', icon: `${process.env.PUBLIC_URL}/img/Property 1=Frame 77.png`, color: 'red' },
+        { word: 'Trabajo ', icon: `${process.env.PUBLIC_URL}/img/Frame 75.png`, color: 'green' }
     ];
 
     const [currentIndex, setCurrentIndex] = useState(0);
