@@ -44,7 +44,7 @@ function Home() {
                                 </span>
                                 <img src={wordsWithIcons[currentIndex].icon} alt="icono" className="rotating-icon" />
                             </h1>
-                            <h2>con <strong>MyFastVisa</strong></h2>
+                            <h2>con <strong className='MyFastVisa-home'>MyFastVisa</strong></h2>
                         </div>
                         <div>
                             <h5 className='yaSea'>Ya sea que viajes por placer, estudio o trabajo, conseguí tu visa sin complicaciones y empezá a cumplir tus sueños con MyFastVisa.</h5>

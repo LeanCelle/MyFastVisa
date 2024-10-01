@@ -1,3 +1,7 @@
+@font-face {
+  font-family: 'Acorn';
+  src: url('/public/fonts/Acorn-Bold.otf') format('truetype');
+}
 .pageGlobalStyle {
   font-family: 'DM Sans', sans-serif;
   background: rgb(242,242,242);
@@ -94,6 +98,11 @@
 }
 
 .contenido-centro {
+  background: rgb(242,242,242);
+  background: -moz-radial-gradient(circle, rgba(242,242,242,1) 0%, rgba(217,0,0,0.1292892156862745) 0%, rgba(242,242,242,1) 50%);
+  background: -webkit-radial-gradient(circle, rgba(242,242,242,1) 0%, rgba(217,0,0,0.1292892156862745) 0%, rgba(242,242,242,1) 50%);
+  background: radial-gradient(circle, rgba(242,242,242,1) 0%, rgba(217,0,0,0.1292892156862745) 0%, rgba(242,242,242,1) 50%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f2f2f2",endColorstr="#f2f2f2",GradientType=1);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -115,6 +124,9 @@
   margin: 0px;
   font-size: 32px;
   font-family: 'DM Sans', sans-serif;
+}
+.MyFastVisa-home {
+  font-family: 'Acorn', sans-serif;
 }
 .yaSea {
   margin: 0px 250px;
@@ -280,6 +292,7 @@
 .textoDebajoLogo {
   z-index: 1;
   margin-top: 20px;
+  padding: 0px 5px;
   font-size: 20px;
   color: white;
 }
@@ -768,6 +781,7 @@ hr {
     font-size: 35px;
   }
   .yaSea {
+    font-weight: normal;
     margin: 0px 0px;
   }
   
@@ -846,6 +860,7 @@ hr {
   .div-transition {
     align-items: start !important;
     width: 100%;
+    padding: 15px;
   }
   .faq-title {
     font-size: 25px;
