@@ -1,9 +1,17 @@
 @font-face {
   font-family: 'Acorn';
-  src: url('/public/fonts/Acorn-Bold.otf') format('truetype');
+  src: url('/public/fonts/Acorn-Regular.otf') format('opentype'); /* Definición de Acorn-Thin */
+  font-weight: 300; /* Peso para Acorn-Thin */
 }
+
+@font-face {
+  font-family: 'Acorn';
+  src: url('/public/fonts/Acorn-Bold.otf') format('opentype'); /* Definición de Acorn-Bold */
+  font-weight: bold; /* Peso para Acorn-Bold */
+}
+
 .pageGlobalStyle {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Acorn', sans-serif; /* Usa Acorn como fuente principal */
   background: rgb(242,242,242);
   background: -moz-radial-gradient(circle, rgba(242,242,242,1) 0%, rgba(217,0,0,0.1292892156862745) 0%, rgba(242,242,242,1) 50%);
   background: -webkit-radial-gradient(circle, rgba(242,242,242,1) 0%, rgba(217,0,0,0.1292892156862745) 0%, rgba(242,242,242,1) 50%);
@@ -109,12 +117,12 @@
   justify-content: center;
   text-align: center;
   padding: 0px 0px 50px 0px;
-  height: 70vh;
+  height: 90vh;
   gap: 20px;
 }
 
 .contenido-centro h1 {
-  font-size: 32px;
+  font-size: 50px;
   font-weight: bold;
   margin: 0px;
   font-family: 'DM Sans', sans-serif;
@@ -122,13 +130,14 @@
 
 .contenido-centro h2 {
   margin: 0px;
-  font-size: 32px;
+  font-size: 50px;
   font-family: 'DM Sans', sans-serif;
 }
 .MyFastVisa-home {
   font-family: 'Acorn', sans-serif;
 }
 .yaSea {
+  font-size: 35px;
   margin: 0px 250px;
 }
 
@@ -148,7 +157,7 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 80px;
-  margin-top: 20px;
+  margin: 20px 80px 0px 80px;
 }
 
 /* Estilos de cada tarjeta */
@@ -585,6 +594,19 @@ input {
   align-items: center;
   border-radius: 25px;
 }
+.input-button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  background-color: #ccc;
+  color: white;
+  cursor: pointer;
+}
+
+.input-button:hover {
+  background-color: #007bff;
+}
 
 .requisitos-titulo {
   margin-bottom: 10px;
@@ -781,9 +803,15 @@ hr {
     font-size: 35px;
     padding: 0px 25px;
   }
+  .contenido-centro h2 {
+    margin: 0px;
+    font-size: 35px;
+    font-family: 'DM Sans', sans-serif;
+  }
   .yaSea {
     font-weight: normal;
     margin: 0px 0px;
+    font-size: 20px;
   }
   
   .nuestrosServicios {

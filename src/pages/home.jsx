@@ -5,6 +5,7 @@ import '../css/homestyle.css';
 import React, { useState, useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { useLocation } from 'react-router-dom';
 
 function Home() {
     const wordsWithIcons = [
@@ -14,6 +15,7 @@ function Home() {
     ];
 
     const [currentIndex, setCurrentIndex] = useState(0);
+    const location = useLocation();
 
     useEffect(() => {
         // Inicializa AOS
@@ -22,19 +24,34 @@ function Home() {
             once: true,
         });
 
+        // Manejar scroll en base al parámetro de la URL
+        const params = new URLSearchParams(location.search);
+        const section = params.get('section');
+        if (section) {
+            const element = document.getElementById(section);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
         const interval = setInterval(() => {
             setCurrentIndex((prevIndex) => (prevIndex + 1) % wordsWithIcons.length);
         }, 2000);
 
         return () => clearInterval(interval);
-    }, [wordsWithIcons.length]);
+    }, [location, wordsWithIcons.length]);
+
+    const handleStartClick = () => {
+        const section = document.getElementById('servicios');
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
 
     return (
         <>
             <div className='pageGlobalStyle'>
                 <Navbar />
-
-
                 <div className='body'>
                     <div className="contenido-centro" data-aos="zoom-out">
                         <div>
@@ -42,7 +59,7 @@ function Home() {
                                 <span style={{ color: wordsWithIcons[currentIndex].color }}>
                                     {wordsWithIcons[currentIndex].word}
                                 </span>
-                                <img src={wordsWithIcons[currentIndex].icon} alt="icono" className="rotating-icon." />
+                                <img src={wordsWithIcons[currentIndex].icon} alt="icono" className="rotating-icon" />
                             </h1>
                             <h2>con <strong className='MyFastVisa-home'>MyFastVisa</strong></h2>
                         </div>
@@ -50,11 +67,10 @@ function Home() {
                             <h5 className='yaSea'>Ya sea que viajes por placer, estudio o trabajo, conseguí tu visa sin complicaciones y empezá a cumplir tus sueños con MyFastVisa.</h5>
                         </div>
                         <div>
-                            <button className="contact-button">Empezar</button>
+                            <button id="servicios" className="contact-button" onClick={handleStartClick}>Empezar</button>
                         </div>
                     </div>
-
-                    <p className='nuestrosServicios'>Nuestros Servicios</p>
+                    <p className='nuestrosServicios'><span className='span'>Nuestros Servicios</span></p>
 
                     <div className="card-container">
                         <div data-aos="fade-up">
@@ -75,7 +91,7 @@ function Home() {
                     </div>
                 </div>
 
-                <p className='somePeople'><span className='numberSpan'>1200+</span> personas obtuvieron<br />sus visas con nosotros</p>
+                <p id="reviews" className='somePeople'><span className='numberSpan'>1200+</span> personas obtuvieron<br />sus visas con nosotros</p>
 
                 <div className="opinion-container" data-aos="fade-up">
                     <div>
@@ -89,7 +105,7 @@ function Home() {
                     </div>
                 </div>
 
-                <div className='requisitos-container-total'>
+                <div id="requisitos" className='requisitos-container-total'>
                     <div className="requisitos-container" data-aos="fade-up">
                         <div className="requisitos-titulo">
                             <p className='contactanos'><span className='span'>Requisitos</span></p>
@@ -107,18 +123,14 @@ function Home() {
                                     <img className='requisitos-icons' src={`${process.env.PUBLIC_URL}/img/Family Man Woman Boy.png`} alt="Family." />
                                     <p className='requisitos-text'>Prueba de lazos con Argentina (por ejemplo, familia, propiedades o empleo).</p>
                                 </div>
-                                <div className="texto-item">
+                                <div  className="texto-item">
                                     <img className='requisitos-icons' src={`${process.env.PUBLIC_URL}/img/Page Facing Up.png`} alt="Paper." />
-                                    <p className='requisitos-text'>Si sos extranjero, también necesitas un documento de identidad (DNI)</p>
+                                    <p id="faq" onClick={handleStartClick} className='requisitos-text'>Si sos extranjero, también necesitas un documento de identidad (DNI)</p>
                                 </div>
                             </div>
                         </div>
-                        <div className="requisitos-boton">
-                            <button className='contact-button'>Leer más</button>
-                        </div>
                     </div>
                 </div>
-
                 <TransitionComponent />
                 <Footer />
             </div>

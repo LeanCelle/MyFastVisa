@@ -24,7 +24,7 @@ function Contactanos() {
               <img src={`${process.env.PUBLIC_URL}/img/Frame 36.png`} alt="Instagram." className="block-image" />
               <h4>Instagram</h4>
               <p>Publicamos contenido relacionado a visados, mantenete informado</p>
-              <a href="https://www.instagram.com/myfastvisa)./" target='_blank' rel="noreferrer"><p>@myfastvisa</p></a>
+              <a href="https://www.instagram.com/myfastvisa/" target='_blank' rel="noreferrer"><p>@myfastvisa</p></a>
             </div>
             <div className="text-block">
               <img src={`${process.env.PUBLIC_URL}/img/Frame 36 (1).png`} alt="Whatsapp." className="block-image" />
@@ -59,13 +59,13 @@ function Contactanos() {
               
               <div className="form-group">
                 <div className="input-container">
-                  <input className='inputTrabajo' type="text" placeholder="Trabajo" />
+                  <button className='input-button'>Trabajo</button>
                 </div>
                 <div className="input-container">
-                  <input className='inputTrabajo' type="text" placeholder="Estudio" />
+                  <button className='input-button'>Estudio</button>
                 </div>
                 <div className="input-container">
-                  <input className='inputTrabajo' type="text" placeholder="Turismo" />
+                  <button className='input-button'>Turismo</button>
                 </div>
               </div>
 
