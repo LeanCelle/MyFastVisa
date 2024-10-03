@@ -67,7 +67,9 @@ function Home() {
                             <h5 className='yaSea'>Ya sea que viajes por placer, estudio o trabajo, conseguí tu visa sin complicaciones y empezá a cumplir tus sueños con MyFastVisa.</h5>
                         </div>
                         <div>
-                            <button id="servicios" className="contact-button" onClick={handleStartClick}>Empezar</button>
+                            <a href="https://api.whatsapp.com/send/?phone=5491137834275&text&type=phone_number&app_absent=0" target='_blank' rel="noreferrer">
+                        <button id="servicios" className='contact-button'>Empezar</button>
+                    </a>
                         </div>
                     </div>
                     <p className='nuestrosServicios'><span className='span'>Nuestros Servicios</span></p>
