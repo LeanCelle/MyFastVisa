@@ -42,7 +42,7 @@ function Home() {
                                 <span style={{ color: wordsWithIcons[currentIndex].color }}>
                                     {wordsWithIcons[currentIndex].word}
                                 </span>
-                                <img src={wordsWithIcons[currentIndex].icon} alt="icono" className="rotating-icon" />
+                                <img src={wordsWithIcons[currentIndex].icon} alt="icono" className="rotating-icon." />
                             </h1>
                             <h2>con <strong className='MyFastVisa-home'>MyFastVisa</strong></h2>
                         </div>
@@ -58,19 +58,19 @@ function Home() {
 
                     <div className="card-container">
                         <div data-aos="fade-up">
-                            <img className='cards' src={`${process.env.PUBLIC_URL}/img/Frame 19 (1).png`} alt="Logo" />
+                            <img className='cards' src={`${process.env.PUBLIC_URL}/img/Frame 19 (1).png`} alt="Card." />
                         </div>
                         <div data-aos="fade-up">
-                            <img className='cards' src={`${process.env.PUBLIC_URL}/img/Frame 29 (1).png`} alt="Logo" />
+                            <img className='cards' src={`${process.env.PUBLIC_URL}/img/Frame 29 (1).png`} alt="Card." />
                         </div>
                         <div data-aos="fade-up">
-                            <img className='cards' src={`${process.env.PUBLIC_URL}/img/Frame 30 (1).png`} alt="Logo" />
+                            <img className='cards' src={`${process.env.PUBLIC_URL}/img/Frame 30 (1).png`} alt="Card." />
                         </div>
                         <div data-aos="fade-up">
-                            <img className='cards' src={`${process.env.PUBLIC_URL}/img/Frame 31 (1).png`} alt="Logo" />
+                            <img className='cards' src={`${process.env.PUBLIC_URL}/img/Frame 31 (1).png`} alt="Card." />
                         </div>
                         <div data-aos="fade-up">
-                            <img className='cards' src={`${process.env.PUBLIC_URL}/img/Frame 32 (1).png`} alt="Logo" />
+                            <img className='cards' src={`${process.env.PUBLIC_URL}/img/Frame 32 (1).png`} alt="Card." />
                         </div>
                     </div>
                 </div>
@@ -79,13 +79,13 @@ function Home() {
 
                 <div className="opinion-container" data-aos="fade-up">
                     <div>
-                        <img className='opinion-cards' src={`${process.env.PUBLIC_URL}/img/Frame 91.png`} alt="Logo" />
+                        <img className='opinion-cards' src={`${process.env.PUBLIC_URL}/img/Frame 91.png`} alt="Card." />
                     </div>
                     <div>
-                        <img className='opinion-cards' src={`${process.env.PUBLIC_URL}/img/Frame 91 (1).png`} alt="Logo" />
+                        <img className='opinion-cards' src={`${process.env.PUBLIC_URL}/img/Frame 91 (1).png`} alt="Card." />
                     </div>
                     <div>
-                        <img className='opinion-cards' src={`${process.env.PUBLIC_URL}/img/Frame 91 (2).png`} alt="Logo" />
+                        <img className='opinion-cards' src={`${process.env.PUBLIC_URL}/img/Frame 91 (2).png`} alt="Card." />
                     </div>
                 </div>
 
@@ -96,19 +96,19 @@ function Home() {
                         </div>
                         <div className="requisitos-contenido">
                             <div className="requisitos-img">
-                                <img src={`${process.env.PUBLIC_URL}/img/Rectangle 11.png`} alt="Imagen principal" />
+                                <img src={`${process.env.PUBLIC_URL}/img/Rectangle 11.png`} alt="Travel bag." />
                             </div>
                             <div className="requisitos-textos">
                                 <div className="texto-item">
-                                    <img className='requisitos-icons' src={`${process.env.PUBLIC_URL}/img/Check Mark Button.png`} alt="Imagen principal" />
+                                    <img className='requisitos-icons' src={`${process.env.PUBLIC_URL}/img/Check Mark Button.png`} alt="Check." />
                                     <p className='requisitos-text'>Pasaporte vigente</p>
                                 </div>
                                 <div className="texto-item">
-                                    <img className='requisitos-icons' src={`${process.env.PUBLIC_URL}/img/Family Man Woman Boy.png`} alt="Imagen principal" />
+                                    <img className='requisitos-icons' src={`${process.env.PUBLIC_URL}/img/Family Man Woman Boy.png`} alt="Family." />
                                     <p className='requisitos-text'>Prueba de lazos con Argentina (por ejemplo, familia, propiedades o empleo).</p>
                                 </div>
                                 <div className="texto-item">
-                                    <img className='requisitos-icons' src={`${process.env.PUBLIC_URL}/img/Page Facing Up.png`} alt="Imagen principal" />
+                                    <img className='requisitos-icons' src={`${process.env.PUBLIC_URL}/img/Page Facing Up.png`} alt="Paper." />
                                     <p className='requisitos-text'>Si sos extranjero, también necesitas un documento de identidad (DNI)</p>
                                 </div>
                             </div>

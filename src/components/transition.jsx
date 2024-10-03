@@ -41,7 +41,7 @@ function TransitionComponent() {
               setShowThird(false);
               setShowFourth(false);
             }}>
-            <img className='arrow' src={`${process.env.PUBLIC_URL}/img/Vector.png`} alt="Logo" />
+            <img className='arrow' src={`${process.env.PUBLIC_URL}/img/Vector.png`} alt="Arrow." />
             <button style={{ background: 'none', border: 'none', color: 'inherit', cursor: 'pointer' }}>
             ¿Por cuánto tiempo es válida la visa?
             </button>
@@ -59,7 +59,7 @@ function TransitionComponent() {
               setShowSecond(false);
               setShowFourth(false);
             }}>
-            <img className='arrow' src={`${process.env.PUBLIC_URL}/img/Vector.png`} alt="Logo" />
+            <img className='arrow' src={`${process.env.PUBLIC_URL}/img/Vector.png`} alt="Logo." />
             <button style={{ background: 'none', border: 'none', color: 'inherit', cursor: 'pointer' }}>
             ¿Cuándo puedo volver a solicitar una visa si es rechazada?
             </button>
@@ -77,7 +77,7 @@ function TransitionComponent() {
               setShowSecond(false);
               setShowThird(false);
             }}>
-            <img className='arrow' src={`${process.env.PUBLIC_URL}/img/Vector.png`} alt="Logo" />
+            <img className='arrow' src={`${process.env.PUBLIC_URL}/img/Vector.png`} alt="Logo." />
             <button style={{ background: 'none', border: 'none', color: 'inherit', cursor: 'pointer' }}>
             ¿Cuáles son las razones más comunes para el rechazo de la visa?
             </button>

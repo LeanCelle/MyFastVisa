@@ -11,10 +11,10 @@ function AcercaDeNosotros() {
           <div className="banner-section">
             
             <div className="banner-background">
-              <img className='bannerAcerca' src={`${process.env.PUBLIC_URL}/img/Rectangle.png`} alt="Fondo" />
+              <img className='bannerAcerca' src={`${process.env.PUBLIC_URL}/img/Rectangle.png`} alt="Desert banner." />
             </div>
             
-            <img className='logoAcerca' src={`${process.env.PUBLIC_URL}/img/Group.png`} alt="Logo" />
+            <img className='logoAcerca' src={`${process.env.PUBLIC_URL}/img/Group.png`} alt="Logo." />
             <h1 className='textoDebajoLogo'>El equipo que hace que tu proceso de visa sea más sencillo</h1>
           </div>
         </div>
@@ -25,7 +25,7 @@ function AcercaDeNosotros() {
             <p className="text-content"><span className='span'>MyFastVisa</span> es un servicio diseñado para <span className='span'>simplificar</span> el proceso de obtención de la visa <span className='span'>estadounidense</span></p>
           </div>
           <div className="image-container">
-            <img className='side-image' src={`${process.env.PUBLIC_URL}/img/Rectangle 17.png`} alt="Imagen lateral" />
+            <img className='side-image' src={`${process.env.PUBLIC_URL}/img/Rectangle 17.png`} alt="Passport." />
           </div>
         </div>
 
@@ -39,11 +39,11 @@ function AcercaDeNosotros() {
             </div>
             <div className="icon-section">
               <div className="icon-item">
-                <img className="icon-image" src={`${process.env.PUBLIC_URL}/img/Trophy.png`} alt="Icono 1" />
+                <img className="icon-image" src={`${process.env.PUBLIC_URL}/img/Trophy.png`} alt="Trophy." />
                 <p className="icon-text">Conseguir las citas</p>
               </div>
               <div className="icon-item">
-                <img className="icon-image" src={`${process.env.PUBLIC_URL}/img/Books.png`} alt="Icono 2" />
+                <img className="icon-image" src={`${process.env.PUBLIC_URL}/img/Books.png`} alt="books." />
                 <p className="icon-text">Prepararte para la entrevista</p>
               </div>
             </div>
