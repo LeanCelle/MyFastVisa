@@ -1,15 +1,15 @@
 import React from 'react';
+import { HashLink as Link } from 'react-router-hash-link'; // Importa HashLink
 import '../css/homestyle.css';
 
 function Footer() {
-
   return (
     <>
       <footer className="footer">
         <div className="footer-section logo-section">
-          <a className='link' href="/">
+          <Link className='link' to="/">
             <img src={`${process.env.PUBLIC_URL}/img/logo.png`} alt="Logo." className="footer-logo" />
-          </a>
+          </Link>
           <p className='li-footer'>Expertos por más de 5 años en la gestión de visas con más de 1200 clientes satisfechos.</p>
           <div className='social-container'>
             <a href="https://api.whatsapp.com/send/?phone=5491137834275&text&type=phone_number&app_absent=0" target='_blank' rel="noreferrer"><img src={`${process.env.PUBLIC_URL}/img/wpp.png`} alt="Whatsapp." className="social-logo" /></a>
@@ -20,8 +20,9 @@ function Footer() {
         <div className="footer-section products-section">
           <h3>Productos</h3>
           <ul>
-            <li className='li-footer'><a href="/servicios" className='link'>Servicios</a></li>
-            <li><a href="/faq" className='link'>Preguntas frecuentes</a></li>
+            {/* Utiliza HashLink para hacer scroll dentro de la misma página */}
+            <li className='li-footer'><Link to="/#servicios" className='link'>Servicios</Link></li>
+            <li><Link to="/#faq" className='link'>Preguntas frecuentes</Link></li>
           </ul>
         </div>
 
@@ -29,13 +30,13 @@ function Footer() {
           <h3>Compañía</h3>
           <ul>
             <li className='li-footer'>
-              <a className='link' href="/acercaDeNosotros">Acerca de nosotros</a>
+              <Link className='link' to="/acercaDeNosotros">Acerca de nosotros</Link>
             </li>
             <li>
-              <a className='link' href="/contactanos">Contáctanos</a>
+              <Link className='link' to="/contactanos">Contáctanos</Link>
             </li>
             <li>
-              <a className='link' href="/paraAgenciasDeViaje">Para agencias de viaje</a>
+              <Link className='link' to="/paraAgenciasDeViaje">Para agencias de viaje</Link>
             </li>
           </ul>
         </div>

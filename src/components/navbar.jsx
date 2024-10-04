@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link'; // Importa HashLink para enlaces con hash
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -35,10 +35,10 @@ function Navbar() {
 
         <ul className={`navbarr-links ${isOpen ? 'active' : ''}`}>
           <li className='burger-titles' style={{ display: isMobile ? 'block' : 'none' }}>Productos</li>
-          <li><a href="/servicios">Servicios</a></li>
-          <li><a href="/reviews">Reviews</a></li>
-          <li><a href="/requisitos">Requisitos</a></li>
-          <li><a href="/faq">FAQ</a></li>
+          <li><Link smooth to="/#servicios">Servicios</Link></li> {/* Desplazamiento suave hacia servicios */}
+          <li><Link to="/#reviews">Reviews</Link></li>
+          <li><Link to="/#requisitos">Requisitos</Link></li>
+          <li><Link smooth to="/#faq">FAQ</Link></li> {/* Desplazamiento suave hacia FAQ */}
           <li className='burger-titles' style={{ display: isMobile ? 'block' : 'none' }}>Compañía</li>
           <li><Link to="/acercaDeNosotros" style={{ display: isMobile ? 'block' : 'none' }}>Acerca de nosotros</Link></li>
           <li><Link to="/contactanos" style={{ display: isMobile ? 'block' : 'none' }}>Contáctanos</Link></li>
