@@ -19,7 +19,7 @@ function Contactanos() {
     data.opcionSeleccionada = selectedOption;
 
     // Envío a Formspree
-    fetch('https://formspree.io/f/xjkvbyyd', { // Reemplaza {tu-id} con tu ID de formulario
+    fetch('https://formspree.io/f/mdkonelj', { // Reemplaza {tu-id} con tu ID de formulario
       method: 'POST',
       body: JSON.stringify(data),
       headers: {

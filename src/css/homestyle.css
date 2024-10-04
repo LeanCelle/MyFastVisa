@@ -1126,8 +1126,10 @@ hr {
     background-color: #0056b3;
   }
 
+  .modal-content {
+    margin: 0px 20px;
 
-
+  }
 
 
 

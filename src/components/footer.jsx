@@ -1,14 +1,7 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
 import '../css/homestyle.css';
 
 function Footer() {
-  const navigate = useNavigate();
-
-  const handleNavigation = (section) => {
-    // Navegar a la página de inicio con el parámetro de consulta
-    navigate(`/?section=${section}`);
-  };
 
   return (
     <>
@@ -27,8 +20,8 @@ function Footer() {
         <div className="footer-section products-section">
           <h3>Productos</h3>
           <ul>
-            <li onClick={() => handleNavigation('servicios')} className='li-footer'>Servicios</li>
-            <li onClick={() => handleNavigation('faq')}>Preguntas frecuentes</li>
+            <li className='li-footer'><a href="/?section=servicios" className='link'>Servicios</a></li>
+            <li><a href="/?section=faq" className='link'>Preguntas frecuentes</a></li>
           </ul>
         </div>
 

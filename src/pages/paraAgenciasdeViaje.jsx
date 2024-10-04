@@ -14,7 +14,7 @@ function ParaAgenciasDeViaje() {
     const formData = new FormData(event.target);
     
     try {
-      const response = await fetch('https://formspree.io/f/xjkvbyyd', {
+      const response = await fetch('https://formspree.io/f/mdkonelj', {
         method: 'POST',
         body: formData,
         headers: {

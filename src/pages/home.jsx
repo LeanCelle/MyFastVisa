@@ -103,14 +103,14 @@ function Home() {
                         <img className='opinion-cards' src={`${process.env.PUBLIC_URL}/img/Frame 91 (1).png`} alt="Card." />
                     </div>
                     <div>
-                        <img className='opinion-cards' src={`${process.env.PUBLIC_URL}/img/Frame 91 (2).png`} alt="Card." />
+                        <img id="requisitos" className='opinion-cards' src={`${process.env.PUBLIC_URL}/img/Frame 91 (2).png`} alt="Card." />
                     </div>
                 </div>
 
                 <div className='requisitos-container-total'>
                     <div className="requisitos-container" data-aos="fade-up">
                         <div className="requisitos-titulo">
-                            <p className='contactanos' id="requisitos"><span className='span'>Requisitos</span></p>
+                            <p className='contactanos'><span className='span'>Requisitos</span></p>
                         </div>
                         <div className="requisitos-contenido">
                             <div className="requisitos-img">
