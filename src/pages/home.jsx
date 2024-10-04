@@ -107,10 +107,10 @@ function Home() {
                     </div>
                 </div>
 
-                <div id="requisitos" className='requisitos-container-total'>
+                <div className='requisitos-container-total'>
                     <div className="requisitos-container" data-aos="fade-up">
                         <div className="requisitos-titulo">
-                            <p className='contactanos'><span className='span'>Requisitos</span></p>
+                            <p className='contactanos' id="requisitos"><span className='span'>Requisitos</span></p>
                         </div>
                         <div className="requisitos-contenido">
                             <div className="requisitos-img">

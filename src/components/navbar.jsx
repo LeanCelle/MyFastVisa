@@ -1,16 +1,17 @@
 import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
 
-  const scrollToSection = (id) => {
-    const section = document.getElementById(id);
-    if (section) {
-        section.scrollIntoView({ behavior: 'smooth' });
-    }
-};
+  const navigate = useNavigate();
+
+  const handleNavigation = (section) => {
+    // Navegar a la página de inicio con el parámetro de consulta
+    navigate(`/?section=${section}`);
+  };
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -42,10 +43,10 @@ function Navbar() {
 
         <ul className={`navbarr-links ${isOpen ? 'active' : ''}`}>
           <li className='burger-titles' style={{ display: isMobile ? 'block' : 'none' }}>Productos</li>
-          <li onClick={() => scrollToSection('servicios')}><Link to="#servicios">Servicios</Link></li>
-          <li onClick={() => scrollToSection('reviews')}><Link to="#reviews">Reviews</Link></li>
-          <li onClick={() => scrollToSection('requisitos')}><Link to="#requisitos">Requisitos</Link></li>
-          <li onClick={() => scrollToSection('faq')}><Link to="#faq">FAQ</Link></li>
+          <li onClick={() => handleNavigation('servicios')}><Link to="#servicios">Servicios</Link></li>
+          <li onClick={() => handleNavigation('reviews')}><Link to="#reviews">Reviews</Link></li>
+          <li onClick={() => handleNavigation('requisitos')}><Link to="#requisitos">Requisitos</Link></li>
+          <li onClick={() => handleNavigation('faq')}><Link to="#faq">FAQ</Link></li>
           <li className='burger-titles' style={{ display: isMobile ? 'block' : 'none' }}>Compañía</li>
           <li><Link to="/acercaDeNosotros" style={{ display: isMobile ? 'block' : 'none' }}>Acerca de nosotros</Link></li>
           <li><Link to="/contactanos" style={{ display: isMobile ? 'block' : 'none' }}>Contáctanos</Link></li>

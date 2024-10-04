@@ -379,6 +379,41 @@
   gap: 5px;
 }
 
+/* Estilos para el modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Asegura que el modal esté por encima de otros elementos */
+}
+
+.modal-content {
+  background-color: white !important;
+  padding: 20px;
+  border-radius: 25px !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 500px;
+  width: 90%;
+}
+
+.close-modal-button {
+  background-color: #4CAF50; /* Color de fondo del botón cerrar */
+  color: white; /* Color del texto */
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+
 .icon-image {
   width: 25px;
   height: auto;
@@ -409,7 +444,7 @@
   font-weight: normal;
   padding: 30px 0px 0px 0px;
   text-align: center;
-  font-size: 30px;
+  font-size: 40px;
 }
 .ofrecemos {
   text-align: center;
@@ -441,11 +476,13 @@
   display: flex;
   justify-content: space-between;
   gap: 10px;
+  margin-bottom: 15px;
 }
 
 .input-container {
   position: relative;
   flex: 1;
+  margin-bottom: 15px;
 }
 .inputTrabajo {
   text-align: center;
@@ -469,6 +506,7 @@ input {
 }
 
 .submit-button {
+  width: 100%;
   margin-top: 20px;
   padding: 10px;
   background-color: #3440EC;
@@ -487,7 +525,7 @@ input {
 
 .contactanos {
   font-weight: normal;
-  font-size: 25px;
+  font-size: 40px !important;
 }
 
 .name-group {
@@ -495,6 +533,24 @@ input {
   justify-content: space-between;
   margin-bottom: 15px;
 }
+/* Estilo para el botón seleccionado */
+.input-button.selected {
+  background-color: #4CAF50; /* Color de fondo cuando está seleccionado */
+  color: white; /* Color del texto */
+}
+
+/* Estilo para el mensaje de éxito */
+.success-message {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #e0ffe0; /* Color de fondo suave */
+  color: #2e702e; /* Color del texto */
+  border: 1px solid #4CAF50; /* Borde verde */
+  border-radius: 5px; /* Bordes redondeados */
+  text-align: center; /* Centrar el texto */
+}
+
+
 
 .name-container {
   flex: 1;
@@ -539,9 +595,6 @@ input {
   width: 40%;
 }
 
-.form-group {
-  margin-bottom: 15px;
-}
 .input-group {
   display: flex;
   justify-content: space-between;
