@@ -35,10 +35,10 @@ function Navbar() {
 
         <ul className={`navbarr-links ${isOpen ? 'active' : ''}`}>
           <li className='burger-titles' style={{ display: isMobile ? 'block' : 'none' }}>Productos</li>
-          <li><a href="/?section=servicios">Servicios</a></li>
-          <li><a href="/?section=reviews">Reviews</a></li>
-          <li><a href="/?section=requisitos">Requisitos</a></li>
-          <li><a href="/?section=faq">FAQ</a></li>
+          <li><a href="/servicios">Servicios</a></li>
+          <li><a href="/reviews">Reviews</a></li>
+          <li><a href="/requisitos">Requisitos</a></li>
+          <li><a href="/faq">FAQ</a></li>
           <li className='burger-titles' style={{ display: isMobile ? 'block' : 'none' }}>Compañía</li>
           <li><Link to="/acercaDeNosotros" style={{ display: isMobile ? 'block' : 'none' }}>Acerca de nosotros</Link></li>
           <li><Link to="/contactanos" style={{ display: isMobile ? 'block' : 'none' }}>Contáctanos</Link></li>

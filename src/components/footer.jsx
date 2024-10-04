@@ -20,8 +20,8 @@ function Footer() {
         <div className="footer-section products-section">
           <h3>Productos</h3>
           <ul>
-            <li className='li-footer'><a href="/?section=servicios" className='link'>Servicios</a></li>
-            <li><a href="/?section=faq" className='link'>Preguntas frecuentes</a></li>
+            <li className='li-footer'><a href="/servicios" className='link'>Servicios</a></li>
+            <li><a href="/faq" className='link'>Preguntas frecuentes</a></li>
           </ul>
         </div>
 
